@@ -1,0 +1,161 @@
+.detail-page {
+  background-color: #dce8db;
+  min-height: 100vh;
+  color: #2f2f2f;
+  font-family: Arial, sans-serif;
+}
+
+.detail-hero {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.detail-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35), transparent);
+}
+
+.detail-title {
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  margin: 0;
+  max-width: 800px;
+}
+
+.detail-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: #8f2baa;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.detail-info-card {
+  background-color: #f5f0f3;
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.detail-meta {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.detail-meta p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.detail-description h2,
+.modules-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #8f2baa;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detail-description p {
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.modules-section {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.modules-list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.modules-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.enrol-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.enrol-button {
+  background-color: #8f2baa;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.enrol-button:hover {
+  background-color: #752291;
+}
+
+.detail-loading,
+.detail-error {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .detail-title {
+    font-size: 4rem;
+  }
+
+  .detail-info-card {
+    padding: 2.5rem;
+  }
+
+  .detail-meta {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .detail-hero {
+    height: 520px;
+  }
+
+  .detail-title {
+    font-size: 5rem;
+  }
+
+  .detail-container {
+    padding-top: 3rem;
+  }
+}
